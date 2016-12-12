@@ -1,0 +1,27 @@
+@(clientes:java.util.List[Cliente])
+
+
+<html>
+	<head>
+	</head>
+	<body>
+		<table border="1">
+			<tr>
+				<td>Nombre</td>
+				<td>Apellido</td>
+				<td>Direccion</td>
+				<td>Fecha</td>
+			</tr>
+				@for(cliente <- clientes){
+			<tr>
+				<td>@cliente.name</td>
+				<td>@cliente.apellido</td>
+				<td>@cliente.direccion</td>
+				<td>@cliente.fecha</td>
+			</tr>
+			}
+			
+		</table>
+	</body>
+
+</html>
